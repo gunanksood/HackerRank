@@ -1,3 +1,6 @@
+/*
+            https://www.hackerrank.com/challenges/journey-to-the-moon
+*/
 #include <cmath>
 #include <cstdio>
 #include <vector>
