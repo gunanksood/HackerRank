@@ -1,5 +1,5 @@
 /*
-   https://www.hackerrank.com/challenges/strange-code
+     https://www.hackerrank.com/challenges/camelcase
 */
 
 #include <map>
@@ -29,18 +29,18 @@ using namespace std;
 
 
 int main(){
-   long long int t;
-    cin >> t;
-    long long int i=3,j,h=3;
-    while(t>i)
+    string s;
+    cin >> s;
+    int i = 0,count = 1;
+    while(s[i]!='\0')
         {
-//    cout<<"h "<<h;
-  //      cout<<"i "<<i;
-        h=h*2;
-        i=i+h;
-  //      cout<<"h "<<h;
-    //    cout<<"i "<<i;
+        if(s[i] < 97)
+            {
+            count++;
+        }
+        i++;
     }
-    cout<<(i-t+1);
+    cout<<count<<endl;
     return 0;
 }
+
